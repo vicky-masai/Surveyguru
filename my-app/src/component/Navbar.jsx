@@ -46,7 +46,7 @@ function Navbar() {
 <div style={{fontWeight:"500",cursor:"pointer"}}><Link href='https://www.surveymonkey.com/pricing/?ut_source=homepage' style={{textDecoration:"none"}}>Plan & Pricing</Link></div>
 <div style={{display:"flex", alignItems:"center"}}>
 <div style={{fontWeight:"500",margin:"0px 20px", cursor:"pointer"}}>Login</div>
-<button style={{backgroundColor:"#FDC713", color:"black", fontWeight:"600", padding:"10px 20px", borderRadius:"5px"}}>Sign up free</button></div></div>
+<button style={{backgroundColor:"#FDC713", color:"black", fontWeight:"400", padding:"10px 20px", borderRadius:"5px"}}>Sign up free</button></div></div>
   )
 }
 
