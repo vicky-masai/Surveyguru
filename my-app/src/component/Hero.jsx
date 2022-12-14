@@ -7,8 +7,10 @@ function Hero() {
       style={{
         backgroundColor: "#CAE8DC",
         width: "100%",
-        height: "540px",
+        height: "600px",
         display: "flex",
+     marginTop:"60px",
+     marginBottom:"20px",
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -25,7 +27,7 @@ function Hero() {
         >
           Create free surveys and forms online in minutes
         </h2>
-        <p style={{ width: "493px", fontSize: "18px", color: "#224F3C" }}>
+        <p style={{ width: "493px", fontSize: "18px", color: "#224F3C",margin:"10px 0px" }}>
           Ask, listen, and act on insights fast with a global leader in surveys
           and forms software.
         </p>

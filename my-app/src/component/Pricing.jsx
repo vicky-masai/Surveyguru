@@ -20,23 +20,23 @@ function Pricing() {
           }}
         >
           <img
-            src="https://prod.smassets.net/assets/cms/sm/uploads//Allbirds-slate.png"
+            src="images/Allbirds-slate.png"
             alt="allbirds"
           />
           <img
-            src="https://prod.smassets.net/assets/cms/sm/uploads//Tweezerman-logo-2x.png"
+            src="images/Tweezerman-logo-2x.png"
             alt="img_scroll_h"
           />
           <img
-            src="https://prod.smassets.net/assets/cms/sm/uploads//Adobe-logo-2x.png"
+            src="images/Adobe-logo-2x.png"
             alt="img_scroll_h"
           />
           <img
-            src="https://prod.smassets.net/assets/cms/sm/uploads//Verizon-logo-2x.png"
+            src="images/Verizon-logo-2x.png"
             alt="img_scroll_h"
           />
           <img
-            src="https://prod.smassets.net/assets/cms/sm/uploads//sephora-logo.png"
+            src="images/sephora-logo.png"
             alt="img_scroll_h"
           />
         </div>
