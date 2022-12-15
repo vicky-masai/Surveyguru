@@ -86,12 +86,9 @@ function Pricing() {
                 cursor: "pointer",
               }}
             >
-              <Link
-                href="https://www.surveymonkey.com/pricing/teams/details/?ut_ctatext=See+all+features&ut_source=pricing-indv-detailsu0026amp%3But_source2%3Dsemu0026amp%3But_source3%3Dsm-button&ut_source3=sm-button"
-                style={{ textDecoration: "none" }}
-              >
+
                 Signup
-              </Link>
+
             </div>
           </center>
           <center>
@@ -126,12 +123,8 @@ function Pricing() {
                 cursor: "pointer",
               }}
             >
-              <Link
-                href="https://www.surveymonkey.com/pricing/teams/details/?ut_ctatext=See+all+features&ut_source=pricing-indv-detailsu0026amp%3But_source2%3Dsemu0026amp%3But_source3%3Dsm-button&ut_source3=sm-button"
-                style={{ textDecoration: "none" }}
-              >
+
                 See all features
-              </Link>
             </div>
           </center>
           <center>
@@ -168,12 +161,7 @@ function Pricing() {
                 cursor: "pointer",
               }}
             >
-              <Link
-                href="https://www.surveymonkey.com/pricing/teams/details/?ut_ctatext=See+all+features&ut_source=pricing-indv-detailsu0026amp%3But_source2%3Dsemu0026amp%3But_source3%3Dsm-button&ut_source3=sm-button"
-                style={{ textDecoration: "none" }}
-              >
                 See all features
-              </Link>
             </div>
           </center>
           <center>
