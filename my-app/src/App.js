@@ -8,6 +8,7 @@ import Pricing from './component/Pricing';
 import Login from "./component/Login";
 import Signup from "./component/Signup";
 import Dashboard from './component/Dashboard';
+import Survey from './component/Survey';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <Pricing />
+      <Survey />
       <Footer />
     </div>
   );
