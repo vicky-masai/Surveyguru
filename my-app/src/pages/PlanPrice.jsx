@@ -1,46 +1,12 @@
 import { Link } from "react-router-dom";
 import React from "react";
-function Pricing() {
+import Navbar from "../component/Navbar";
+import Footer from "../component/Footer";
+function PlanPrice() {
   return (
-    <div style={{ width: "100%", height: "auto", margin: "40px auto" }}>
-      <center>
-        <h2 style={{ fontSize: "18px", fontWeight: "600" }}>
-          Join more than 17 million active users worldwide
-        </h2>
-      </center>
-      <center>
-        <div
-          className="scroll_img"
-          style={{
-            width: "90%",
-            height: "80px",
-            display: "flex",
-            overflowX: "scroll",
-            margin: "20px 5% 90px 5%",
-          }}
-        >
-          <img
-            src="images/Allbirds-slate.png"
-            alt="allbirds"
-          />
-          <img
-            src="images/Tweezerman-logo-2x.png"
-            alt="img_scroll_h"
-          />
-          <img
-            src="images/Adobe-logo-2x.png"
-            alt="img_scroll_h"
-          />
-          <img
-            src="images/Verizon-logo-2x.png"
-            alt="img_scroll_h"
-          />
-          <img
-            src="images/sephora-logo.png"
-            alt="img_scroll_h"
-          />
-        </div>
-      </center>
+    <>
+    <Navbar/>
+    <div style={{ width: "100%", height: "600px", margin: "80px auto" }}>
       <center>
         <h2 style={{ fontSize: "25px", fontWeight: "800" }}>
           Choose a plan that works for you
@@ -72,7 +38,8 @@ function Pricing() {
           <div>
             <p>Always free</p>
           </div>
-          <center><Link to={"/signup"}>
+          <center>
+            <Link to={"/signup"}>
             <div
               style={{
                 width: "100px",
@@ -175,7 +142,9 @@ function Pricing() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
-export default Pricing;
+export default PlanPrice;
