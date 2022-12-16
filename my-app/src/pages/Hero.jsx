@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 function Hero() {
   return (
     <div
@@ -31,6 +31,7 @@ function Hero() {
           Ask, listen, and act on insights fast with a global leader in surveys
           and forms software.
         </p>
+        <Link to={"/signup"}>
         <button
           style={{
             backgroundColor: "#FDC713",
@@ -42,7 +43,7 @@ function Hero() {
           }}
         >
           Get started
-        </button>
+        </button></Link>
       </div>
       <div style={{ width: "600px", height: "auto" }}>
         <img src="images/hero.png" alt="banner" />

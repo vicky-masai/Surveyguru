@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Menu,
   Image,
@@ -8,14 +8,13 @@ import {
   MenuItem,
   ButtonGroup,
   Button,
-  Link,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import SignupCard from "./Signup";
+import SignupCard from "../pages/Signup";
 function Navbar() {
   return (
     <div className="header">
-      <Image onClick={()=>window.location.replace("/")}src="images/SurveyGuru.png" alt="Dan Abramov" style={{cursor:"pointer"}} />
+      <Link to={"/"}><Image src="images/SurveyGuru.png" alt="Dan Abramov" style={{cursor:"pointer"}} /></Link>
       <Menu>
         <MenuButton
           as={Button}
@@ -26,19 +25,19 @@ function Navbar() {
         </MenuButton>
         <MenuList>
           <MenuItem>
-            <Link href="https://www.surveymonkey.com/mp/take-a-tour/">
+            <Link to={"https://www.surveymonkey.com/mp/take-a-tour/"}>
               SurveyGuru
             </Link>
           </MenuItem>
           <MenuItem>
             {" "}
-            <Link href="https://www.surveymonkey.com/mp/enterprise/">
+            <Link to={"https://www.surveymonkey.com/mp/enterprise/"}>
               Enterprise
             </Link>
           </MenuItem>
           <MenuItem>
             {" "}
-            <Link href="https://www.surveymonkey.com/apps/?ut_source=homepage&ut_source3=megamenucontrol">
+            <Link to={"https://www.surveymonkey.com/apps/?ut_source=homepage&ut_source3=megamenucontrol"}>
               Integration and Plug-ins
             </Link>
           </MenuItem>
@@ -55,17 +54,17 @@ function Navbar() {
         </MenuButton>
         <MenuList>
           <MenuItem>
-            <Link href="https://www.surveymonkey.com/mp/customer-feedback/">
+            <Link to={"https://www.surveymonkey.com/mp/customer-feedback/"}>
               Customers
             </Link>
           </MenuItem>
           <MenuItem>
-            <Link href="https://www.surveymonkey.com/mp/employee-feedback/">
+            <Link to={"https://www.surveymonkey.com/mp/employee-feedback/"}>
               Employees
             </Link>
           </MenuItem>
           <MenuItem>
-            <Link href="https://www.surveymonkey.com/market-research/">
+            <Link to={"https://www.surveymonkey.com/market-research/"}>
               Markets
             </Link>
           </MenuItem>
@@ -83,19 +82,19 @@ function Navbar() {
         <MenuList>
           <MenuItem>
             {" "}
-            <Link href="https://www.surveymonkey.com/resources/">
+            <Link to={"https://www.surveymonkey.com/resources/"}>
               Resources
             </Link>
           </MenuItem>
           <MenuItem>
             {" "}
-            <Link href="https://www.surveymonkey.com/curiosity/">
+            <Link to={"https://www.surveymonkey.com/curiosity/"}>
               Curiosity at work
             </Link>
           </MenuItem>
           <MenuItem>
             {" "}
-            <Link href="https://help.surveymonkey.com/en/?ut_source=homepage&ut_source3=megamenucontrol">
+            <Link to={"https://help.surveymonkey.com/en/?ut_source=homepage&ut_source3=megamenucontrol"}>
               Help Center
             </Link>
           </MenuItem>
@@ -103,19 +102,19 @@ function Navbar() {
       </Menu>
       <div style={{ fontWeight: "500", cursor: "pointer" }}>
         <Link
-          href="#"
+          to={"/price"}
           style={{ textDecoration: "none" }}
         >
           Plan & Pricing
         </Link>
       </div>
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div style={{ display: "flex", alignItems: "center" }}><Link to={"/login"}>
         <div
           style={{ fontWeight: "500", margin: "0px 20px", cursor: "pointer" }}
         >
           Login
-        </div>
-        <button onClick={()=>window.location.replace("/signup")}
+        </div></Link>
+        <Link to={"/signup"}> <button
           style={{
             backgroundColor: "#FDC713",
             color: "black",
@@ -123,10 +122,8 @@ function Navbar() {
             padding: "10px 20px",
             borderRadius: "5px",
           }}>
-          <Router>
-            <Link to="/signup">Sign up free</Link>
-          </Router>
-        </button>
+            Sign up free
+        </button></Link>
       </div>
     </div>
   );

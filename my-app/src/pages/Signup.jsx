@@ -12,17 +12,22 @@ import {
     Heading,
     Text,
     useColorModeValue,
-    Link,
   } from '@chakra-ui/react';
+import { Link } from "react-router-dom";
+
   
   import { useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
+import Navbar from '../component/Navbar';
+import Footer from '../component/Footer';
   
   export default function SignupCard() {
     const [showPassword, setShowPassword] = useState(false);
   
     return (
-      <Flex
+      <>
+      <Navbar />
+      <Flex style={{marginTop:"30px"}}
         minH={'100vh'}
         align={'center'}
         justify={'center'}
@@ -30,34 +35,28 @@ import {
         <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
           <Stack align={'center'}>
             <Heading fontSize={'4xl'} textAlign={'center'}>
-              Sign up
+              Signup now
             </Heading>
             <Text fontSize={'lg'} color={'gray.600'}>
-              to enjoy all of our cool features ✌️
+              Fill the details for survey enquire
             </Text>
           </Stack>
           <Box
             rounded={'lg'}
             bg={useColorModeValue('white', 'gray.700')}
-            boxShadow={'lg'}
+            boxShadow={'lg'} style={{width:"400px", height:"auto", margin:"20px auto"}}
             p={8}>
             <Stack spacing={4}>
-              <HStack>
-                <Box>
-                  <FormControl id="firstName" isRequired>
-                    <FormLabel>First Name</FormLabel>
-                    <Input type="text" />
-                  </FormControl>
-                </Box>
-                <Box>
-                  <FormControl id="lastName">
-                    <FormLabel>Last Name</FormLabel>
-                    <Input type="text" />
-                  </FormControl>
-                </Box>
-              </HStack>
+            <FormControl>
+            <FormLabel>Full Name</FormLabel>
+                <Input type="name" />
+              </FormControl>
               <FormControl id="email" isRequired>
                 <FormLabel>Email address</FormLabel>
+                <Input type="email" />
+              </FormControl>
+              <FormControl id="phone" isRequired>
+                <FormLabel>Phone no</FormLabel>
                 <Input type="email" />
               </FormControl>
               <FormControl id="password" isRequired>
@@ -79,22 +78,24 @@ import {
                 <Button
                   loadingText="Submitting"
                   size="lg"
-                  bg={'blue.400'}
-                  color={'white'}
+                  bg={'#FDC713'}
+                  color={'#1C1606'}
                   _hover={{
-                    bg: 'blue.500',
+                    bg: '#FDC712',
                   }}>
-                  Sign up
+              Signup
                 </Button>
               </Stack>
               <Stack pt={6}>
                 <Text align={'center'}>
-                  Already a user? <Link color={'blue.400'}>Login</Link>
+                  Already a user? <Link color={'#2CBD6C'} to={"/login"}>Login</Link>
                 </Text>
               </Stack>
             </Stack>
           </Box>
         </Stack>
       </Flex>
+      <Footer />
+      </>
     );
   }

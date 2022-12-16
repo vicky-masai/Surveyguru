@@ -5,8 +5,8 @@ import {
   MenuList,
   MenuItem,
   Button,
-  Link,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { ChevronDownIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 function Footer() {
   return (
