@@ -19,6 +19,7 @@ import { Link } from "react-router-dom";
 import Navbar from '../component/Navbar';
 import Footer from '../component/Footer';
 import { useToast } from '@chakra-ui/react';
+import axios from 'axios';
   export default function SignupCard() {
     const toast = useToast()
     const [showPassword, setShowPassword] = useState(false);
@@ -27,6 +28,7 @@ import { useToast } from '@chakra-ui/react';
   const[phone, setPhone]=useState("");
   const[password, setPassword]=useState("");
 const handleSubmit =(e)=>{
+
   e.preventDefault();
     if(name=="" && email =="" && phone==""&&password==""){
       toast({
@@ -37,6 +39,14 @@ const handleSubmit =(e)=>{
         isClosable: true,
       })
     }else{
+      axios({
+        method: 'post',
+        url: 'http://localhost:3080/api/enquires',
+        data: {
+          id:email,
+          name,email,phone,password
+        }
+      });
      window.location.replace("/submit");
     }
   }
