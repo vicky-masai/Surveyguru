@@ -14,16 +14,32 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
 import { Link } from "react-router-dom";
-
-  
   import { useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import Navbar from '../component/Navbar';
 import Footer from '../component/Footer';
-  
+import { useToast } from '@chakra-ui/react';
   export default function SignupCard() {
+    const toast = useToast()
     const [showPassword, setShowPassword] = useState(false);
-  
+  const[name, setName]=useState("");
+  const[email, setEmail]=useState("");
+  const[phone, setPhone]=useState("");
+  const[password, setPassword]=useState("");
+const handleSubmit =(e)=>{
+  e.preventDefault();
+    if(name=="" && email =="" && phone==""&&password==""){
+      toast({
+        title: 'Invalid data',
+        description: "Please enter your valid details",
+        status: 'error',
+        duration: 3000,
+        isClosable: true,
+      })
+    }else{
+     window.location.replace("/submit");
+    }
+  }
     return (
       <>
       <Navbar />
@@ -35,7 +51,7 @@ import Footer from '../component/Footer';
         <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
           <Stack align={'center'}>
             <Heading fontSize={'4xl'} textAlign={'center'}>
-              Signup now
+             Enquire now
             </Heading>
             <Text fontSize={'lg'} color={'gray.600'}>
               Fill the details for survey enquire
@@ -49,20 +65,20 @@ import Footer from '../component/Footer';
             <Stack spacing={4}>
             <FormControl>
             <FormLabel>Full Name</FormLabel>
-                <Input type="name" />
+                <Input type="name" onChange={(e)=>setName(e.target.value)} />
               </FormControl>
               <FormControl id="email" isRequired>
                 <FormLabel>Email address</FormLabel>
-                <Input type="email" />
+                <Input type="email" onChange={(e)=>setEmail(e.target.value)} />
               </FormControl>
               <FormControl id="phone" isRequired>
                 <FormLabel>Phone no</FormLabel>
-                <Input type="email" />
+                <Input type="number"  onChange={(e)=>setPhone(e.target.value)}/>
               </FormControl>
               <FormControl id="password" isRequired>
                 <FormLabel>Password</FormLabel>
                 <InputGroup>
-                  <Input type={showPassword ? 'text' : 'password'} />
+                  <Input type={showPassword ? 'text' : 'password'} onChange={(e)=>setPassword(e.target.value)}/>
                   <InputRightElement h={'full'}>
                     <Button
                       variant={'ghost'}
@@ -82,8 +98,8 @@ import Footer from '../component/Footer';
                   color={'#1C1606'}
                   _hover={{
                     bg: '#FDC712',
-                  }}>
-              Signup
+                  }} onClick={ handleSubmit}>
+              Submit
                 </Button>
               </Stack>
               <Stack pt={6}>
