@@ -11,10 +11,37 @@ import {
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
+  import { useToast } from '@chakra-ui/react';
+import { useState } from 'react';
 import { Link } from "react-router-dom";
 import Footer from '../component/Footer';
 import Navbar from '../component/Navbar';
   export default function Login() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const toast = useToast()
+const handleLogin =()=>{
+  if(email=="hajipurtech@gmail.com" && password=="vision@123"){
+    toast({
+      title: 'Login Successful',
+      description: "User found in our database",
+      status: 'success',
+      duration: 9000,
+      isClosable: true,
+    })
+    window.location.replace("/dashboard");
+  }else{
+    toast({
+      title: 'Invalid User!',
+      description: "User not found in our database",
+      status: 'error',
+      duration: 3000,
+      isClosable: true,
+    })
+  }
+}
+    
+
     return (
       <>
       <Navbar />
@@ -38,11 +65,11 @@ import Navbar from '../component/Navbar';
             <Stack spacing={4}>
               <FormControl id="email">
                 <FormLabel>Email address</FormLabel>
-                <Input type="email" />
+                <Input type="email" onChange={(e)=>setEmail(e.target.value)}/>
               </FormControl>
               <FormControl id="password">
                 <FormLabel>Password</FormLabel>
-                <Input type="password" />
+                <Input type="password" onChange={(e)=>setPassword(e.target.value)}/>
               </FormControl>
               <Stack spacing={10}>
                 <Stack
@@ -57,7 +84,7 @@ import Navbar from '../component/Navbar';
                     color={'#1C1606'}
                     _hover={{
                       bg: '#FDC712',
-                  }}>
+                  }} onClick={handleLogin}>
                   Sign in
                 </Button>
               </Stack>
