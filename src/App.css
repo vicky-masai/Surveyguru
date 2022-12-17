@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+/* Navabr code start here  */
+.header{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+    top: 0;
+    z-index: 999;
+  background-color: #FFFFFF;
+  display: flex;
+align-items: center;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+justify-content: space-evenly;
+}
+a{
+  line-height: 170%;
+  font-size: 15px;
+  text-decoration: none;
+}
+a:hover{
+color: rgb(72, 71, 71);
+text-decoration: none;
+}
+
+/* price section code start here  */
+.price-3{
+width: 80%;
+height: 466px;
+margin: 20px auto;
+display: grid;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(1, auto);
+gap: 20px;
+}
+.price-3>div{
+  background-color: #FFFFFF;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.price-3>div:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.price-3 h2{
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.b1{
+  background-color: #2DBF6F;
+  color: #FFFFFF;
+}
+.b2{
+  background-color: #09467E;
+  color: #FFFFFF;
+}
+.b3{
+  background-color: #53225B;
+  color: #FFFFFF;
+}
+p{
+  color: #333639;
+}
+
+.scroll_img img{
+  width: 100%;
+  height: auto;
+}
+/* price end here  */
+
+/* survey banner code */
+
+.survey{
+  width: 100%;
+  height:350px;
+  margin: 20px 0px;
+  display: flex;
+flex-direction: column;
+  align-items: center;
+  justify-content: center;
+background-repeat:no-repeat;
+size: cover;
+position: center;
+color: #FEFEFF;
+}
+/* end survey code  */
+
+
+/* footer code start here  */
+
+.wdt{
+  width: 80%;
+  height: auto;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: repeat(auto);
+  align-items: center;
+gap: 20px;
+}
+.wdt h2{
+  font-size: 20px;
+  font-weight: 600;
+  color: #282727e6;
+  margin: 10px 0px;
+}
+
+.wdt div{
+display:flex;
+flex-direction:column;
+padding: 0px 20px;
+}
+
+/* end footer code  */
+
+
+/* dashboard code  */
+.ds th{
+font-size: 15px;
+color: #FFFFFF;
+}
+/* end dashboard code  */
