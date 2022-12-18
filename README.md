@@ -1,6 +1,7 @@
 # SurveyGuru
 Welcome to SurveyGuru, the easiest way to create and conduct surveys online. With SurveyGuru, you can quickly and easily gather valuable insights from your customers, employees, or any other group you want to survey.
-![surveyGuru](https://user-images.githubusercontent.com/110033953/208283061-f90942eb-411c-4d0a-9038-af8d039d0c9f.png)
+![surveyGuru](https://user-images.githubusercontent.com/110033953/208283663-ca9ee87d-bda5-4dd5-82dc-656f159f561a.png)
+
 
 ## Features
 * Create surveys with a variety of question types, including multiple choice, rating scales, and open-ended questions
