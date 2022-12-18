@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# SurveyGuru
+Welcome to SurveyGuru, the easiest way to create and conduct surveys online. With SurveyGuru, you can quickly and easily gather valuable insights from your customers, employees, or any other group you want to survey.
+![surveyGuru](https://user-images.githubusercontent.com/110033953/208283061-f90942eb-411c-4d0a-9038-af8d039d0c9f.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+* Create surveys with a variety of question types, including multiple choice, rating scales, and open-ended questions
+* Customize the look and feel of your surveys with your own branding and themes
+* Collect responses in real-time and view detailed results and analytics
+* Send reminders and follow-up emails to increase response rates
+* Collaborate with your team by sharing and commenting on surveys
 
-## Available Scripts
+## Getting Started
+To get started with SurveyGuru, simply sign up for a free account and start creating your first survey. Our user-friendly interface makes it easy to add questions, customize your survey's appearance, and set up email invitations and reminders.
 
-In the project directory, you can run:
+Here is the deployed link :- [SurveyGuru](https://surveyguru.netlify.app/)
 
-### `npm start`
+## Tech Stack Used
+* React
+* CSS
+* Chakra Ui
+* Axios
+* React Router 
+* JSON Server
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Support
+If you have any questions or need help getting started, please don't hesitate to contact us. Our support team is always here to help you get the most out of SurveyGuru.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Thank you for choosing SurveyGuru! We hope you find our tool useful in gathering valuable insights from your audience.
 
-### `npm test`
+## Credits
+- [Vicky Kumar](https://github.com/vicky-masai)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
+This project is licensed under the [GPL] license, you don't have permission to copy the code and wesbite for doing this you have to take permission to us.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Here is the deployed link :- [SurveyGuru](https://surveyguru.netlify.app/)
