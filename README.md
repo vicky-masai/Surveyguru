@@ -22,7 +22,7 @@ Here is the deployed link :- [SurveyGuru](https://surveyguru.netlify.app/)
 * Chakra Ui
 * Axios
 * React Router 
-* JSON Server
+* [JSON Server](https://surveyguru-mockserver.onrender.com/api/enquires)
 
 ## Support
 If you have any questions or need help getting started, please don't hesitate to contact us. Our support team is always here to help you get the most out of SurveyGuru.
