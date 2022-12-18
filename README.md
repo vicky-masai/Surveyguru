@@ -33,6 +33,6 @@ Thank you for choosing SurveyGuru! We hope you find our tool useful in gathering
 - [Vicky Kumar](https://github.com/vicky-masai)
 
 ## License
-This project is licensed under the [GPL] license, you don't have permission to copy the code and wesbite for doing this you have to take permission to us.
+This project is licensed under the [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html) license, you don't have permission to copy the code and wesbite for doing this you have to take permission to us.
 
 Here is the deployed link :- [SurveyGuru](https://surveyguru.netlify.app/)
